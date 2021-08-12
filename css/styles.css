@@ -1,0 +1,44 @@
+#snakeinfo {
+  display: none;
+}
+
+#bearinfo {
+  display: none;
+}
+
+#eagleinfo {
+  display: none;
+}
+
+
+img {
+  width  : 300px;
+  height : auto;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.clickable2 {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickable2:hover {
+  text-decoration: underline;
+}
+
+.clickable3 {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickable3:hover {
+  text-decoration: underline;
+}
