@@ -9,7 +9,6 @@ $(document).ready(function() {
     $(".intro").hide();
     $(".quiz").show();
   });
-
   $("form#quiz").submit(function(event) {
     event.preventDefault();
     let answer1 = parseInt($("input:radio[name=chargingCreature]:checked").val());
@@ -24,8 +23,6 @@ $(document).ready(function() {
     } else if (result > 7) {
       $("#hermione").show();
     }
-
     $(".quiz").hide();
-    // $(".results").show();
   });
 });
