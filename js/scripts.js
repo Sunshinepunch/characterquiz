@@ -6,13 +6,12 @@ $(document).ready(function() {
     let answer3 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
     let result = parseInt((answer1 + answer2 + answer3));
 
-    if (result <=3) {
+    if (result <= 3) {
       $("#harry").show();
-    } else if (result >3 || <= 7) {
+    } else if (result > 3 && result <= 7) {
       $("#ron").show();
-    } else if (result >7) {
+    } else if (result > 7) {
       $("#hermione").show();
     }
-
   });
 });
