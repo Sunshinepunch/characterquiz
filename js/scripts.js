@@ -1,30 +1,18 @@
 $(document).ready(function() {
-  $('input[type="radio"]').click(function() {
-    // const animal= $("input:radio[name=creature]:checked").val();
-      let value = $(this).attr("value");
-      if (value === "snake") {
-        $("#bearinfo").hide();
-        $("#eagleinfo").hide();
-        $("#snakeinfo").show();
-      } else if (value === "bear"){
-        $("#eagleinfo").hide();
-        $("#snakeinfo").hide();
-        $("#bearinfo").show();
-      } else if (value === "eagle"){
-        $("#snakeinfo").hide();
-        $("#bearinfo").hide();
-        $("#eagleinfo").show();
-        }
-      });
-    });
+  $("form#").submit(function(event) {
+    event.preventDefault();
+    let answer1 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
+    let answer2 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
+    let answer3 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
+    let result = parseInt((answer1 + answer2 + answer3));
 
-  // $(".clickable2").click(function() {
-  //   $("#hide2").toggle();
-  //   $("#show2").toggle();
-  // });
-  // $(".clickable3").click(function() {
-  //   $("#hide3").toggle();
-  //   $("#show3").toggle();
-  // });
+    if (result <=3) {
+      $("#harry").show();
+    } else if (result >3 || <= 7) {
+      $("#ron").show();
+    } else if (result >7) {
+      $("#hermione").show();
+    }
 
-
+  });
+});
