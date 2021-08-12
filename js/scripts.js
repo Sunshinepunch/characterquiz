@@ -1,10 +1,21 @@
+function add (answer1,answer2,answer3) {
+  return (answer1 + answer2 + answer3);
+}
+
+
 $(document).ready(function() {
-  $("form#").submit(function(event) {
+  $("form#intro").submit(function(event) {
     event.preventDefault();
-    let answer1 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
-    let answer2 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
-    let answer3 = parseInt($("input:radio[name=NAMEGOESHERE]:checked").val());
-    let result = parseInt((answer1 + answer2 + answer3));
+    $(".intro").hide();
+    $(".quiz").show();
+  });
+
+  $("form#quiz").submit(function(event) {
+    event.preventDefault();
+    let answer1 = parseInt($("input:radio[name=chargingCreature]:checked").val());
+    let answer2 = parseInt($("input:radio[name=essay]:checked").val());
+    let answer3 = parseInt($("input:radio[name=money]:checked").val());
+    let result = add(answer1, answer2, answer3);
 
     if (result <= 3) {
       $("#harry").show();
@@ -13,5 +24,8 @@ $(document).ready(function() {
     } else if (result > 7) {
       $("#hermione").show();
     }
+
+    $(".quiz").hide();
+    // $(".results").show();
   });
 });

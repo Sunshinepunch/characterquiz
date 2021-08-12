@@ -12,82 +12,84 @@
 <body>
   <div class="container" id="quizzle">
     <h1>Welcome Muggle! </h1>
-    <div class="intro">
-      <p>In another life you could have been a wizard, witch,
-      or wizzle. Thanks to the magic of yesteryay, we're going to let you
-      peek deep into the ether and see this version of yourself!
+    <form id="intro">
+      <div class="intro">
+        <p>In another life you could have been a wizard, witch,
+        or wizzle. Thanks to the magic of yesteryay, we're going to let you
+        peek deep into the ether and see this version of yourself!
 
-      We will need a little bit of help from you. Answer these questions as truthfully
-      as you can, and we will pinpoint your alterwizself! </p>
+        We will need a little bit of help from you. Answer these questions as truthfully
+        as you can, and we will pinpoint your alterwizself! </p>
 
-      <button type="submit">Click here to get started!</button>
-    </div>
-    <div class="quiz">
-      <label for="chargingCreature"><h3>Q1. A creature unlike anything you've ever seen charges at you and your friends!
-        What do you do?</h3></label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="chargingCreature" value="1" checked />
-            I stand firm - no lousy mythological mutt is gonna chase me off
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="chargingCreature" value="2" checked />
-            I turn tail and book it - I didn't take track for nothing!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="chargingCreature" value="3" checked />
-            I'm torn between my desire to catalogue it and to survive!
-          </label>
-        </div>
-
-      <label for="essay"><h3>Q2. Your Teacher assigns an essay due in 1 week, what do you do? </h3></label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="1" checked />
-            Screw it, I have quidditch practice, I'll do it tomorrow!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="2" checked />
-            Play wizard chess or feast on some candy until the night before it's due.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="3" checked />
-            Start right away, of course!
-          </label>
-        </div>
-
-      <br>
-
-      <label for="jobintech"><h3>Q3. You are offered a job that pays extremely well but requires a gray sense of morals. What do you do?</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="chargingCreature" value="1" checked />
-          No amount of money is worth my honor. I turn it down.
-        </label>
+        <button type="submit" class="intro">Click here to get started!</button>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="chargingCreature" value="2" checked />
-          Sorry I couldn't hear you over the sounds of the cash register in my ears.
-        </label>
+    </form>
+    <br>
+    <form id="quiz">
+      <div class="quiz">
+        <label for="chargingCreature"><h3>Q1. A creature unlike anything you've ever seen charges at you and your friends!
+          What do you do?</h3></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="chargingCreature" value="1"/>
+              I stand firm - no lousy mythological mutt is gonna chase me off
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="chargingCreature" value="2" />
+              I turn tail and book it - I didn't take track for nothing!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="chargingCreature" value="3"/>
+              I'm torn between my desire to catalogue it and to survive!
+            </label>
+          </div>
+        <label for="essay"><h3>Q2. Your Teacher assigns an essay due in 1 week, what do you do? </h3></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="essay" value="1"/>
+              Screw it, I have quidditch practice, I'll do it tomorrow!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="essay" value="2"/>
+              Play wizard chess or feast on some candy until the night before it's due.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="essay" value="3"/>
+              Start right away, of course!
+            </label>
+          </div>
+        <br>
+        <label for="money"><h3>Q3. You are offered a job that pays extremely well but requires a gray sense of morals. What do you do?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="money" value="1" />
+            No amount of money is worth my honor. I turn it down.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="money" value="2" />
+            Sorry I couldn't hear you over the sounds of the cash register in my ears.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="money" value="3" />
+            If it challenges institutionalized mindsets then I think I look pretty good in gray, but I have my limits.
+          </label>
+        </div>
+        <button type="submit" class="btn">submit</button>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="chargingCreature" value="3" checked />
-          If it challenges institutionalized mindsets then I think I look pretty good in gray, but I have my limits.
-        </label>
-      </div>
-    </div>
-
-    <div class="results">
+    </form>
+    <!-- <div class="results"> -->
       <div id="harry">
         <img src="https://media1.giphy.com/media/OPBZnaTaC92yA/200.webp?cid=ecf05e47w5sx6iwbkdtupwnnes5klb875qkl78tati1igoaw&rid=200.webp&ct=g" alt="harry potter gif">
       </div>
@@ -97,8 +99,7 @@
       <div id="hermione">
         <img src="https://media4.giphy.com/media/cYYx0b3DcYwOA/200w.webp?cid=ecf05e47hvgmmd3edudfywusfmv2mk90f2mgdt8mn541ag3l&rid=200w.webp&ct=g" alt="hermione granger clapping">
       </div>
-
-    </div>
+    <!-- </div> -->
 
   </div>
 </body>
